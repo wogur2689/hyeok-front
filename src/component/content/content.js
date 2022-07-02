@@ -1,4 +1,5 @@
 import axios from 'axios';
+import SignUp from './member/signup';
 
 const getPing = async () => {
     try {
@@ -19,6 +20,8 @@ function Content() {
       Hello World!<br/>
       연결테스트!
       <button onClick={getPing}>ping</button>
+      <hr></hr>
+      <SignUp/>
     </div>
     );
 }
