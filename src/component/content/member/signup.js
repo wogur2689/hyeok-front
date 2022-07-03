@@ -1,3 +1,4 @@
+import React, { useState } from "react";
 import axios from 'axios';
 
 const signup = async () => {
@@ -17,14 +18,27 @@ const signup = async () => {
 };
 
 function SignUp() {
+    const [userId, setUserId] = useState("");
+    const [name, setName] = useState("");
+    const [password, setPassword] = useState("");
+    const onChangeUserId = (e) => {
+        setUserId(e.target.value);
+    };
+    const onChangeName = (e) => {
+      setName(e.target.value);
+    };
+    const onChangePassword = (e) => {
+        setPassword(e.target.value);
+    };
+
     return(
         <section>
             <h1>회원가입</h1>
             <form method="post" action="/member/signup">
-                <input type="text" name="userId" placeholder="아이디">아이디 </input>
-                <input type="text" name="name" placeholder="이름">이름 </input>
-                <input type="password" name="password" placeholder="비밀번호">비밀번호 </input>
-                <input type="submit" value="가입" onClick={signup}></input>
+                <input type="text" name="userId" placeholder="아이디" onChangeUserId={onChangeUserId} value={userId}/>
+                <input type="text" name="name" placeholder="이름" ohnChangeName={onChangeName} value={name}/>
+                <input type="password" name="password" placeholder="비밀번호" onChangePassword={onChangePassword} value={password}/>
+                <input type="submit" value="가입" onClick={signup}/>
             </form>
         </section>
     )

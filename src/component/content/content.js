@@ -1,4 +1,5 @@
 import axios from 'axios';
+import Login from './member/login';
 import SignUp from './member/signup';
 
 const getPing = async () => {
@@ -22,6 +23,7 @@ function Content() {
       <button onClick={getPing}>ping</button>
       <hr></hr>
       <SignUp/>
+      <Login/>
     </div>
     );
 }
