@@ -22,7 +22,6 @@ function Content() {
       연결테스트!
       <button onClick={getPing}>ping</button>
       <hr></hr>
-      <SignUp/>
       <Login/>
     </div>
     );
