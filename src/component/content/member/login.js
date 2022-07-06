@@ -16,37 +16,40 @@ function Login() {
           [name]: value // name 키를 가진 값을 value 로 설정
         });
       };
-    
-      const onReset = () => {
-        setInputs({
-          userId: userId,
-          password: password,
-        })
-      };
+  
 
-      const postPing = async () => {
-        try {
-          const data = await axios.post(URL='http://localhost:8080/member/login'
-        ,{
-            user_id: inputs.userId,
-            password: inputs.password
-          });
-          console.log(data);
-        } catch (error) {
-          console.log(error);
+      const postPing = async() => {
+        let loginReq = {
+          user_id: inputs.userId,
+          password: inputs.password
         }
-        return null;
-      };
+        // 전송
+          const res = await axios({
+            method: "POST",
+            url: 'http://localhost:8080/member/login',
+            headers: {
+              "Content-Type": 'application/json'
+            },
+            data: JSON.stringify(loginReq)
+          }).then(response => {
+              return response.data.head.result_code;
+            }).catch(error => {
+              console.log(error);
+            });
+            
+            setInputs({userId: '', password: ''}) //폼에 입력된 값 초기화 
+            return res;
+        };
 
     return(
         <section>
             <h1>로그인</h1>
-            <form method="post" action="/member/login">
+            <form onSubmit={(e) => {e.preventDefault(); postPing();}}>
                 <input type="text" name="userId" placeholder="아이디" onChange={onChange} value={userId}/>
                 <input type="password" name="password" placeholder="비밀번호" onChange={onChange} value={password}/>
-                <button onClick={postPing}>전송</button>
-                <button onClick={onReset}>초기화</button>
+                <button type="submit">로그인</button>
             </form>
+            <p>결과 : {postPing && "0000" ? "성공" : "실패"}</p>
         </section>
     )
 }
