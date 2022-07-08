@@ -1,6 +1,7 @@
 import axios from 'axios';
-import Login from './member/login';
-import SignUp from './member/signup';
+import styles from './content.module.css';
+//import Login from './member/login';
+//import SignUp from './member/signup';
 
 const getPing = async () => {
     try {
@@ -17,12 +18,12 @@ const getPing = async () => {
 
 function Content() {
     return (
-    <div>
-      Hello World!<br/>
+    <div className={styles.content}>
+      {/*Hello World!<br/>
       연결테스트!
       <button onClick={getPing}>ping</button>
-      <hr></hr>
-      <Login/>
+    <hr></hr>*/}
+      컨텐츠
     </div>
     );
 }
