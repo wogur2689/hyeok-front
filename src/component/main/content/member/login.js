@@ -24,14 +24,13 @@ function Login() {
           password: inputs.password
         }
         // 전송
-          const res = await axios({
-            method: "POST",
-            url: 'http://localhost:8080/member/login',
-            headers: {
+          const res = await axios.post(
+            'http://localhost:8080/member/login',
+            loginReq,
+            {headers: {
               "Content-Type": 'application/json'
-            },
-            data: JSON.stringify(loginReq)
-          }).then(response => {
+            }},
+          ).then(response => {
               return response.data.head.result_code;
             }).catch(error => {
               console.log(error);
