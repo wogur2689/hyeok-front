@@ -1,9 +1,10 @@
 import axios from 'axios';
+import Login from './member/login';
 import styles from './content.module.css';
 //import Login from './member/login';
 //import SignUp from './member/signup';
 
-const getPing = async () => {
+{/*const getPing = async () => {
     try {
       const {data} = await axios.get('http://localhost:8080/api/ping'
       ,{params: {
@@ -15,7 +16,7 @@ const getPing = async () => {
     }
     return null;
   };
-
+*/}
 function Content() {
     return (
     <div className={styles.content}>
@@ -24,6 +25,7 @@ function Content() {
       <button onClick={getPing}>ping</button>
     <hr></hr>*/}
       컨텐츠
+      <Login/>
     </div>
     );
 }

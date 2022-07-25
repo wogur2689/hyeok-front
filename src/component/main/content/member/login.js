@@ -36,7 +36,9 @@ function Login() {
               console.log(error);
             });
             
-            setInputs({userId: '', password: ''}) //폼에 입력된 값 초기화 
+            setInputs({
+              userId: '',
+               password: ''}) //폼에 입력된 값 초기화 
             return res;
         };
 
