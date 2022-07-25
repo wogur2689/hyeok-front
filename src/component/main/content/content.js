@@ -1,5 +1,6 @@
 import axios from 'axios';
 import Login from './member/login';
+import SignUp from './member/signup';
 import styles from './content.module.css';
 //import Login from './member/login';
 //import SignUp from './member/signup';
@@ -26,6 +27,7 @@ function Content() {
     <hr></hr>*/}
       컨텐츠
       <Login/>
+      <SignUp/>
     </div>
     );
 }
