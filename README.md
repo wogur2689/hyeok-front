@@ -1,4 +1,6 @@
 # hyeok-front
-front-end
+project : front-end
 
-React
+Skil : React.js + axios
+
+subject : RestFul Project
