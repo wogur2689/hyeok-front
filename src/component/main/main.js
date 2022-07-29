@@ -4,9 +4,11 @@ import Content from './content/content';
 
 function Main() {
     return (
-        <div className={styles.main}>
-            <Banner/>
-            <Content/>
+        <div className={styles.section}>
+            <div className={styles.main}>
+                <Banner/>
+                <Content/>
+            </div>
         </div>
     )
 }

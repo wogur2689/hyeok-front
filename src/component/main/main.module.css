@@ -1,6 +1,22 @@
+* {
+    margin: 0 auto;
+}
+
+.section { /* 데스크톱 */
+    height: 1067px;
+    margin-top: 0;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    position: relative;
+}
+
 .main {
-    width: 1707px; 
-    margin: 0 auto; 
-    height: inherit; 
-    background: rgba(255, 255, 255, 0.3);
+    position: absolute;
+    position: relative;
+    width: 90%;
+    height: 100%;
+    display: inline-block;
+    position: relative;
+    z-index: 10;
 }

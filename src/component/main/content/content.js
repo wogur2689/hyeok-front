@@ -21,13 +21,22 @@ import styles from './content.module.css';
 function Content() {
     return (
     <div className={styles.content}>
+      <div className={styles.contents}>
+        <div className={styles.nemo1}>
+          
+        </div>
+        <div className={styles.nemo2}>
+
+        </div>
+        <div className={styles.nemo3}>
+
+        </div>
+      </div>
+    
       {/*Hello World!<br/>
       연결테스트!
       <button onClick={getPing}>ping</button>
     <hr></hr>*/}
-      컨텐츠
-      <Login/>
-      <SignUp/>
     </div>
     );
 }

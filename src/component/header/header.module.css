@@ -1,19 +1,18 @@
-header {
+.header {
     height: 80px;
     position: relative;
 }
-nav {
+.nav {
     position: absolute;
-    top:0;
-    left: 1300px;
-    float: right;
+    top:15%;
+    left: 75%;
 }
-div {
-    display: inline-block;
+.div {
+    display: inline;
 }
-a {
+.a {
     text-decoration: none;
     color: rgb(40, 40, 40);
     font-size: 24px;
-    margin-left: 30px;
+    margin-left: 20px;
 }
