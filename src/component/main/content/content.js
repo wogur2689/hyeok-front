@@ -1,6 +1,5 @@
 //import axios from 'axios';
 import Login from './member/login';
-import SignUp from './member/signup';
 import styles from './content.module.css';
 import { Link, Route, Routes } from 'react-router-dom';
 //import Login from './member/login';
@@ -24,8 +23,7 @@ function Content() {
     <div className={styles.content}>
       <div className={styles.contents}>
         <div className={styles.nemo1}>
-          <Link to="/login">로그인</Link>
-          <Link to="/signup">회원가입</Link>
+          <Link to="/login" style={styles.Link}>로그인</Link>
         </div>
         <div className={styles.nemo2}>
 
@@ -34,15 +32,13 @@ function Content() {
 
         </div>
       </div>
-      {/*<Routes>
+      <Routes>
         <Route path="/login" element={<Login/>}/>
-        <Route path="/signup" element={<SignUp/>}/>
-    </Routes>*/}
+      </Routes>
     
       {/*Hello World!<br/>
       연결테스트!
-      <button onClick={getPing}>ping</button>
-    <hr></hr>*/}
+      <button onClick={getPing}>ping</button>*/}
     </div>
     );
 }

@@ -15,6 +15,7 @@
     height: 350px;
     background: red;
     margin-right: 106px;
+    position: relative;
 }
 .nemo2 {
     display: inline-block;
@@ -28,4 +29,10 @@
     width: 450px;
     height: 350px;
     background: green;
+}
+.nemo1 a {
+    display: inline-block;
+    position: absolute;
+    left: 200px;
+    top: 25%;
 }
