@@ -35,4 +35,9 @@
     position: absolute;
     left: 200px;
     top: 25%;
+    text-decoration: none;
+    color: black;
+}
+.nemo1 a:hover {
+    color: white;
 }

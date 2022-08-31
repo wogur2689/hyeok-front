@@ -2,6 +2,7 @@
 import Login from './member/login';
 import styles from './content.module.css';
 import { Link, Route, Routes } from 'react-router-dom';
+import Time from './time/time';
 //import Login from './member/login';
 //import SignUp from './member/signup';
 
@@ -24,6 +25,7 @@ function Content() {
       <div className={styles.contents}>
         <div className={styles.nemo1}>
           <Link to="/login" style={styles.Link}>로그인</Link>
+          <Time/>
         </div>
         <div className={styles.nemo2}>
 
