@@ -24,7 +24,9 @@ function Content() {
     <div className={styles.content}>
       <div className={styles.contents}>
         <div className={styles.nemo1}>
+        <Route path="/login">
           <Link to="/login" style={styles.Link}>로그인</Link>
+        </Route>
           <Time/>
         </div>
         <div className={styles.nemo2}>
