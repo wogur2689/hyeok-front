@@ -9,7 +9,9 @@ function Header() {
             로고 및 헤더
             <nav className={styles.nav}>
                 <Link to="/">Home</Link>
-                <Link to="/login">Login</Link>
+                <Link to="/login">Sign in</Link>
+                <Link to="/login">Board</Link>
+                <Link to="/login">Map</Link>
             </nav>
         </header>
     );
