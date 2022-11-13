@@ -1,4 +1,5 @@
 import styles from './header.module.css';
+import logo from '../../images/logo.png';
 import { 
     Link, 
 } from 'react-router-dom';
@@ -6,7 +7,7 @@ import {
 function Header() {
     return (
         <header className={styles.header}>
-            로고 및 헤더
+            <img src={logo} className={styles.logo} alt='로고'></img>
             <nav className={styles.nav}>
                 <Link to="/">Home</Link>
                 <Link to="/login">Sign in</Link>

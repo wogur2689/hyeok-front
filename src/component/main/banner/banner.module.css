@@ -3,3 +3,10 @@
     height: 400px;
     background-color: aqua;
 }
+.banner .imgBanner {
+    width: 1000px;
+    height: 400px;
+    background-image: url('/src/images/banner1.png');
+    background-size: cover;
+    float: left;
+}
