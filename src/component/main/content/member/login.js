@@ -54,7 +54,6 @@ function Login() {
                 <input type="password" name="password" placeholder="비밀번호" onChange={onChange} value={password}/>
                 <button type="submit">로그인</button>
             </form>
-            <p>결과 : {postPing && "0000" ? "성공" : "실패"}</p>
             <p><Link to="/SignUp">회원가입</Link></p>
         </section>
     )
