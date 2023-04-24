@@ -2,15 +2,17 @@
     height: 80px;
     position: relative;
 }
+.logo {
+    position: absolute;
+    top:-15%;
+    left: 5%;
+}
 .nav {
     position: absolute;
     top:15%;
     left: 75%;
 }
-.div {
-    display: inline;
-}
-.a {
+a {
     text-decoration: none;
     color: rgb(40, 40, 40);
     font-size: 24px;
