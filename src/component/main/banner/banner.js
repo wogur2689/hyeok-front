@@ -3,7 +3,7 @@ import styles from './banner.module.css';
 function Banner() {
     return (
         <div className={styles.banner}>
-            배너
+            <img src="img/banner.png" alt='배너' className={styles.bannerImg}/>
         </div>
     )
 }

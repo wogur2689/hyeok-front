@@ -22,19 +22,18 @@ import Time from './time/time';
 function Content() {
     return (
     <div className={styles.content}>
+      {/* 프로필 */}
+      <div className={styles.profile}>
+        <div className={styles.picture}></div>
+        <div className={styles.textLine}>이름</div>
+        <div className={styles.textLine}>나이</div>
+        <div className={styles.textLine}>직업</div>
+      </div>
+      {/* 프로젝트들 */}
       <div className={styles.contents}>
-        <div className={styles.nemo1}>
-        <Route path="/login">
-          <Link to="/login" style={styles.Link}>로그인</Link>
-        </Route>
-          <Time/>
-        </div>
-        <div className={styles.nemo2}>
-
-        </div>
-        <div className={styles.nemo3}>
-
-        </div>
+        <img src="img/caret-left.png" alt="왼쪽" className={styles.imgButton}/>
+        <div className={styles.nemo}></div>
+        <img src="img/caret-right.png" alt="오른쪽" className={styles.imgButton}/>
       </div>
       <Routes>
         <Route path="/login" element={<Login/>}/>

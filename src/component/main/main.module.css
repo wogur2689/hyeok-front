@@ -3,7 +3,7 @@
 }
 
 .section { /* 데스크톱 */
-    height: 1067px;
+    height: 100%;
     margin-top: 0;
     margin-left: auto;
     margin-right: auto;
@@ -11,10 +11,20 @@
     position: relative;
 }
 
-.main {
+.banner {
     position: absolute;
     position: relative;
-    width: 90%;
+    width: 100%;
+    height: 100%;
+    display: inline-block;
+    position: relative;
+    z-index: 10;
+}
+
+.content {
+    position: absolute;
+    position: relative;
+    width: 100%;
     height: 100%;
     display: inline-block;
     position: relative;
