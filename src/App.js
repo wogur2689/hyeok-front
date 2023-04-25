@@ -8,7 +8,7 @@ import {
   Route,
   BrowserRouter
 } from "react-router-dom";
-import SignUp from './component/main/content/member/signUp';
+import SignUp from './component/main/content/member/signup';
 
 function App() {
   return (

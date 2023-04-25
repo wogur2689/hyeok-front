@@ -2,7 +2,6 @@
 import Login from './member/login';
 import styles from './content.module.css';
 import { Link, Route, Routes } from 'react-router-dom';
-import Time from './time/time';
 //import Login from './member/login';
 //import SignUp from './member/signup';
 
