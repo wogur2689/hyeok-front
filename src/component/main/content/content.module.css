@@ -5,10 +5,10 @@
 }
 
 .profile {
-    width: 300px;
+    width: 40%;
     height: 800px;
     display: flex;
-    flex-direction: column
+    flex-direction: column;
 }
 
 .picture {
@@ -22,16 +22,20 @@
 .textLine {
     margin-top: 15px;
     font-size: 25px;
+    width: 300px;
+    border-bottom: 1px solid black;
 }
 
 .contents {
     display: flex;
     align-items: center;
+    width: 100%;
     height: 800px;
+    border-left: 1px black solid;
 }
 .nemo {
-    width: 600px;
-    height: 500px;
+    width: 800px;
+    height: 600px;
     background: red;
 }
 

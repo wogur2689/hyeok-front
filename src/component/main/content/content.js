@@ -5,6 +5,21 @@ import { Link, Route, Routes } from 'react-router-dom';
 //import Login from './member/login';
 //import SignUp from './member/signup';
 
+const contentData = [
+  {
+    key: "이름",
+    value: "길재혁",
+  },
+  {
+    key: "생년",
+    value: "1999년",
+  },
+  {
+    key: "직업",
+    value: "개발자",
+  },
+]
+
 /*const getPing = async () => {
     try {
       const {data} = await axios.get('http://localhost:8080/api/ping'
@@ -24,9 +39,9 @@ function Content() {
       {/* 프로필 */}
       <div className={styles.profile}>
         <div className={styles.picture}></div>
-        <div className={styles.textLine}>이름</div>
-        <div className={styles.textLine}>나이</div>
-        <div className={styles.textLine}>직업</div>
+        {contentData.map((data) => 
+          <div className={styles.textLine}>{data.key} : {data.value}</div>
+        )}
       </div>
       {/* 프로젝트들 */}
       <div className={styles.contents}>
