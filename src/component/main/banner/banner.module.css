@@ -6,19 +6,44 @@
     background-color: black;
 }
 
-.imgCommon {
+.imgBackHidden {
     position: absolute;
     top: 50%;
     transform: translate(-50%, -50%);
-}
-
-.imgBack {
     width: 80%;
     height: 100%;
     left: 50%;
+    opacity: 0;
 }
 
-.imgFont {
+.imgFontHidden {
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%, -50%);
     width: 40%;
     left: 40%;
+    opacity: 0;
+}
+
+.imgBackShow {
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 80%;
+    height: 100%;
+    left: 50%;
+    opacity: 1;
+    transition-delay: 1000s;
+    transition: 3s;
+}
+
+.imgFontShow {
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 40%;
+    left: 40%;
+    opacity: 1;
+    transition-delay: 500s;
+    transition: 1s;
 }

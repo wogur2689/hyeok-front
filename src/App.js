@@ -3,12 +3,12 @@ import Header from './component/header/header';
 import Footer from './component/footer/footer';
 import Main from './component/main/main';
 import Login from './component/main/content/member/login';
+import SignUp from './component/main/content/member/signup';
 import {
   Routes,
   Route,
   BrowserRouter
 } from "react-router-dom";
-import SignUp from './component/main/content/member/signup';
 
 function App() {
   return (
