@@ -4,9 +4,7 @@ import styles from './banner.module.css';
 function Banner() {
     const [bannerBackShow, setBannerBackShow] = useState(false);
     const [bannerFontShow, setBannerFontShow] = useState(false);
-    
-    const bannerBack = useRef(null);
-    const bannerFont = useRef(null);
+
 
     useEffect(() => {
         setTimeout(() => {
@@ -19,8 +17,8 @@ function Banner() {
 
     return (
         <div className={styles.banner}>
-            <img src="img/banner_back.gif" alt='배너_배경' ref={bannerBack} className={bannerBackShow ? styles.imgBackShow : styles.imgBackHidden}/>
-            <img src="img/banner_font.png" alt='배너_폰트' ref={bannerFont} className={bannerFontShow ? styles.imgFontShow : styles.imgFontHidden}/>
+            <img src="img/banner_back.gif" alt='배너_배경' className={bannerBackShow ? styles.imgBackShow : styles.imgBackHidden}/>
+            <img src="img/banner_font.png" alt='배너_폰트' className={bannerFontShow ? styles.imgFontShow : styles.imgFontHidden}/>
         </div>
     )
 }
