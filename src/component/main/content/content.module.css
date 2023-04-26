@@ -17,12 +17,23 @@
     height: 300px;
     border-radius: 50%;
     background-color: wheat;
+    position: relative;
+    overflow: hidden;
+}
+
+.picImg {
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    height: 100%;
+    left: 50%;
 }
 
 .textLine {
     margin-top: 15px;
     font-size: 25px;
-    width: 300px;
+    width: 150px;
     border-bottom: 1px solid black;
 }
 
@@ -38,7 +49,10 @@
     height: 600px;
     background: red;
 }
-
+.youtube {
+    width: 100%;
+    height: 100%;
+}
 .imgButton {
     width: 100px;
     height: 100px;

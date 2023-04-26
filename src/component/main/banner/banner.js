@@ -1,10 +1,9 @@
-import React, { useEffect, useRef, useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import styles from './banner.module.css';
 
 function Banner() {
     const [bannerBackShow, setBannerBackShow] = useState(false);
     const [bannerFontShow, setBannerFontShow] = useState(false);
-
 
     useEffect(() => {
         setTimeout(() => {

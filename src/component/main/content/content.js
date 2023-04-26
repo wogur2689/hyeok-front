@@ -1,9 +1,6 @@
-//import axios from 'axios';
 import Login from './member/login';
 import styles from './content.module.css';
-import { Link, Route, Routes } from 'react-router-dom';
-//import Login from './member/login';
-//import SignUp from './member/signup';
+import {Route, Routes } from 'react-router-dom';
 
 const contentData = [
   {
@@ -20,43 +17,42 @@ const contentData = [
   },
 ]
 
-/*const getPing = async () => {
-    try {
-      const {data} = await axios.get('http://localhost:8080/api/ping'
-      ,{params: {
-        a123: "React!"
-      }});
-      return data;
-    } catch (error) {
-      console.error(error);
-    }
-    return null;
-  };
-*/
 function Content() {
     return (
-    <div className={styles.content}>
-      {/* 프로필 */}
-      <div className={styles.profile}>
-        <div className={styles.picture}></div>
-        {contentData.map((data) => 
-          <div className={styles.textLine}>{data.key} : {data.value}</div>
-        )}
+      <div className={styles.content}>
+        {/* 프로필 */}
+        <div className={styles.profile}>
+          <div className={styles.picture}>
+            <img src="/img/macarons.jpg" alt='프로필 사진' className={styles.picImg}/>
+          </div>
+          {contentData.map((data) => 
+            <div className={styles.textLine}>{data.key} : {data.value}</div>
+          )}
+        </div>
+        {/* 프로젝트들 */}
+        <div className={styles.contents}>
+          {/* <img src="img/caret-left.png" alt="왼쪽" className={styles.imgButton}/> */}
+          <div className={styles.nemo}>
+          {/* YOUTUBE VIDEO */}
+          <iframe src="https://www.youtube.com/embed/DMcRIihAq9Q" 
+            title="YouTube video player" 
+            frameborder="0" 
+            allow="accelerometer; 
+              autoplay; 
+              clipboard-write; 
+              encrypted-media; 
+              gyroscope; 
+              picture-in-picture; 
+              web-share" 
+            allowfullscreen
+            className={styles.youtube}></iframe>
+          </div>
+          {/* <img src="img/caret-right.png" alt="오른쪽" className={styles.imgButton}/> */}
+        </div>
+        <Routes>
+          <Route path="/login" element={<Login/>}/>
+        </Routes>
       </div>
-      {/* 프로젝트들 */}
-      <div className={styles.contents}>
-        <img src="img/caret-left.png" alt="왼쪽" className={styles.imgButton}/>
-        <div className={styles.nemo}></div>
-        <img src="img/caret-right.png" alt="오른쪽" className={styles.imgButton}/>
-      </div>
-      <Routes>
-        <Route path="/login" element={<Login/>}/>
-      </Routes>
-    
-      {/*Hello World!<br/>
-      연결테스트!
-      <button onClick={getPing}>ping</button>*/}
-    </div>
     );
 }
 
