@@ -53,11 +53,21 @@ const datas = [
 function Tree() {
     return (
         <div className={styles.tree}>
-            <div>
-                
+            <div className={styles.line}>
+                <div className={styles.one}>
+                    학력
+                </div>
+                <div className={styles.explanation}>
+                    2022
+                </div>
             </div>
-            <div>
-
+            <div className={styles.line}>
+                <div className={styles.explanation}>
+                    2018
+                </div>
+                <div className={styles.one}>
+                    경력
+                </div>
             </div>
         </div>
     )
