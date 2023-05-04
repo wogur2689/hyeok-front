@@ -60,6 +60,18 @@ function Tree() {
                 <div className={styles.explanation}>
                     2022
                 </div>
+                <div className={styles.one}>
+                    개인
+                </div>
+                <div className={styles.explanation}>
+                    2021
+                </div>
+                <div className={styles.one}>
+                    자격
+                </div>
+                <div className={styles.explanation}>
+                    2021
+                </div>
             </div>
             <div className={styles.line}>
                 <div className={styles.explanation}>
@@ -67,6 +79,12 @@ function Tree() {
                 </div>
                 <div className={styles.one}>
                     경력
+                </div>
+                <div className={styles.explanation}>
+                    팀
+                </div>
+                <div className={styles.one}>
+                    2021
                 </div>
             </div>
         </div>
