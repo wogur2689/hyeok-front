@@ -17,8 +17,8 @@ const datas = [
         key: "경력",
         period: "2021 ~ 현재",
         value: [
-            "디지털마케터 인턴 1개월 [(주) 우리템]"
-            ,"SI 경력 1년 [(주) 크림솔루션]"
+            "디지털마케터 인턴 1개월"
+            ,"SI 경력 1년"
         ]
     },
     {
@@ -35,7 +35,7 @@ const datas = [
         key: "팀",
         period: "2021 ~ 현재",
         value: [
-            "DMC - android"
+            "DMC - android(kotlin)"
             ,"Site - React + Spring"
             ,"영화 웹사이트 - React"
         ]
@@ -69,9 +69,6 @@ function Tree() {
                 <div className={styles.one}>
                     자격
                 </div>
-                <div className={styles.explanation}>
-                    2021
-                </div>
             </div>
             <div className={styles.line}>
                 <div className={styles.explanation}>
@@ -81,9 +78,12 @@ function Tree() {
                     경력
                 </div>
                 <div className={styles.explanation}>
-                    팀
+                    2021
                 </div>
                 <div className={styles.one}>
+                    팀
+                </div>
+                <div className={styles.explanation}>
                     2021
                 </div>
             </div>
