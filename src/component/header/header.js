@@ -10,9 +10,8 @@ function Header() {
             <img src={logo} className={styles.logo} alt='로고'></img>
             <nav className={styles.nav}>
                 <Link to="/">Home</Link>
-                <Link to="/login">Sign in</Link>
-                <Link to="/login">Board</Link>
-                <Link to="/login">Map</Link>
+                <Link to="/login">profile</Link>
+                <Link to="/login">tree</Link>
             </nav>
         </header>
     );
