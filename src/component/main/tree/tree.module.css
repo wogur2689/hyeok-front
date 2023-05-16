@@ -12,7 +12,8 @@
     border-radius: 50%;
     margin-top: 101px;
     opacity: 60%;
-    font-weight: bold;
+    font-weight: bolder;
+    line-height: 300px;
 }
 .one:nth-child(1) {
     background: linear-gradient(yellow, white);
@@ -55,6 +56,17 @@
     animation-duration: 3s;
     animation-name: slidein-right;
     animation-iteration-count: 1;
+}
+.explanation > h2 {
+    font-size:xx-large;
+    font-weight: bold;
+    text-align: left;
+}
+.explanation > p {
+    font-size: large;
+    font-weight: bold;
+    text-align: left;
+    line-height: 30px;
 }
 
 .line {
