@@ -1,7 +1,9 @@
 import styles from './tree.module.css';
 
+//1. data
 const datas = [
     {
+        id: '0',
         key: "학력",
         period: "2018 ~ 2022",
         value: [
@@ -14,6 +16,7 @@ const datas = [
         ]
     },
     {
+        id: '1',
         key: "경력",
         period: "2021 ~ 현재",
         value: [
@@ -22,6 +25,7 @@ const datas = [
         ]
     },
     {
+        id: '2',
         key: "개인",
         period: "2021 ~ 현재",
         value: [
@@ -32,6 +36,7 @@ const datas = [
         ]
     },
     {
+        id: '3',
         key: "팀",
         period: "2021 ~ 현재",
         value: [
@@ -41,6 +46,7 @@ const datas = [
         ]
     },
     {
+        id: '4',
         key: "자격",
         period: "2021 ~ 현재",
         value: [
@@ -50,68 +56,51 @@ const datas = [
     }
 ]
 
+//2. 도형
+export const One = ({title}) => {
+    return (
+        <div className={styles.one}>{title}</div>
+    )
+}
+
+//3. 설명
+export const Explanation = (props) => {
+    return (
+        <div className={styles.explanation}>
+            {datas.map((v) => {
+                return (
+                    <>
+                        <h2>{props.idx === v.id ? v.period : ""}</h2>
+                        <p>
+                            {props.idx === v.id ? v.value.map((v) => {
+                                return <>- {v}<br/></>
+                            }) : ""}
+                            <br/>
+                        </p>
+                    </>
+                )
+            })}
+        </div>
+    )
+}
+
+//pages
 function Tree() {
     return (
         <div className={styles.tree}>
             <div className={styles.line}>
-                <div className={styles.one}>
-                    학력
-                </div>
-                <div className={styles.explanation}>
-                    <h2>2021 ~ 현재</h2>
-                    <p>
-                        → 스타트업 디지털마케터 인턴 1개월<br/>
-                        → SI 경력 1.5년
-                    </p>
-                </div>
-                <div className={styles.one}>
-                    개인
-                </div>
-                <div className={styles.explanation}>
-                <h2>2021 ~ 현재</h2>
-                <p>
-                    → DMC - android<br/>
-                    → Site - React + Spring<br/>
-                    → 영화 웹사이트 - React<br/>
-                </p>
-                </div>
-                <div className={styles.one}>
-                    자격
-                </div>
+                <One title={"학력"}/>
+                <Explanation idx={"1"}/>
+                <One title={"개인"}/>
+                <Explanation idx={"3"}/>
+                <One title={"자격"}/>
             </div>
             <div className={styles.line}>
-                <div className={styles.explanation}>
-                    <h2>2018 ~ 2022</h2>
-                    <p>
-                        동양미래대학교 컴퓨터정보공학과<br/>
-                        → 학점 3.6<br/>
-                        → 졸업작품 우수상<br/>
-                        → AI 우수상<br/>
-                        → 포트폴리오 장려상<br/>
-                    </p>
-                </div>
-                <div className={styles.one}>
-                    경력
-                </div>
-                <div className={styles.explanation}>
-                    <h2>2021 ~ 현재</h2>
-                    <p>
-                        → 나만의 웹사이트 - PHP<br/>
-                        → Mp3 - React<br/>
-                        → plant - android<br/>
-                        → 버블버블 - Python<br/>
-                    </p>
-                </div>
-                <div className={styles.one}>
-                    팀
-                </div>
-                <div className={styles.explanation}>
-                    <h2>2021 ~ 현재</h2>
-                    <p>
-                        → 컴활 1급<br/>
-                        → 정보처리산업기사 (아직)
-                    </p>
-                </div>
+                <Explanation idx={"0"}/>
+                <One title={"경력"}/>
+                <Explanation idx={"2"}/>
+                <One title={"팀"}/>
+                <Explanation idx={"4"}/>
             </div>
         </div>
     )
