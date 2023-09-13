@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/hyeok-front/static/css/main.7e5d3dde.css",
+    "main.js": "/hyeok-front/static/js/main.38692764.js",
+    "static/js/787.7a0bfedd.chunk.js": "/hyeok-front/static/js/787.7a0bfedd.chunk.js",
+    "index.html": "/hyeok-front/index.html",
+    "main.7e5d3dde.css.map": "/hyeok-front/static/css/main.7e5d3dde.css.map",
+    "main.38692764.js.map": "/hyeok-front/static/js/main.38692764.js.map",
+    "787.7a0bfedd.chunk.js.map": "/hyeok-front/static/js/787.7a0bfedd.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.7e5d3dde.css",
+    "static/js/main.38692764.js"
+  ]
+}
