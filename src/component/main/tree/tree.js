@@ -40,7 +40,7 @@ const datas = [
         key: "팀",
         period: "2021 ~ 현재",
         value: [
-            "DMC - android(kotlin)"
+            "DMC - android(kotlin) + admin"
             ,"Site - React + Spring"
             ,"영화 웹사이트 - React"
         ]
@@ -52,6 +52,7 @@ const datas = [
         value: [
             "컴퓨터 활용능력 1급"
             ,"리눅스 마스터 2급"
+            ,"정보처리산업기사"
         ]
     }
 ]
