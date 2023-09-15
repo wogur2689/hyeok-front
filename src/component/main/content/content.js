@@ -1,6 +1,5 @@
-import Login from './member/login';
 import styles from './content.module.css';
-import {Route, Routes } from 'react-router-dom';
+import macarons from '../../../images/macarons.jpg'
 
 const contentData = [
   {
@@ -23,7 +22,7 @@ function Content() {
         {/* 프로필 */}
         <div className={styles.profile}>
           <div className={styles.picture}>
-            <img src="/img/macarons.jpg" alt='프로필 사진' className={styles.picImg}/>
+            <img src={macarons} alt='프로필 사진' className={styles.picImg}/>
           </div>
           {contentData.map((data) => 
             <div className={styles.textLine}>{data.key} : {data.value}</div>
@@ -49,9 +48,6 @@ function Content() {
           </div>
           {/* <img src="img/caret-right.png" alt="오른쪽" className={styles.imgButton}/> */}
         </div>
-        <Routes>
-          <Route path="/login" element={<Login/>}/>
-        </Routes>
       </div>
     );
 }

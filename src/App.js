@@ -13,7 +13,10 @@ import {
 function App() {
   return (
     <div>
-      <BrowserRouter>
+      <Header/>
+      <Main/>
+      <Footer/>
+      {/* <BrowserRouter>
         <Header/>
           <Routes>
             <Route path="/" element={<Main/>}></Route>
@@ -21,7 +24,7 @@ function App() {
             <Route path="/signUp" element={<SignUp />}></Route>
           </Routes>
       </BrowserRouter>
-      <Footer/>
+      <Footer/> */}
     </div>      
   );
 }

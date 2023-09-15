@@ -9,9 +9,13 @@ function Header() {
         <header className={styles.header}>
             <img src={logo} className={styles.logo} alt='로고'></img>
             <nav className={styles.nav}>
+                <a href='/'>Home</a>
+                <a href='/'>profile</a>
+                <a href='/'>tree</a>
+                {/*
                 <Link to="/">Home</Link>
-                <Link to="/login">profile</Link>
-                <Link to="/login">tree</Link>
+                <Link to="/">profile</Link>
+                <Link to="/">tree</Link> */}
             </nav>
         </header>
     );

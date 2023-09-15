@@ -31,12 +31,12 @@
     background: linear-gradient(blue, white);
 }
 .one:nth-child(1), .one:nth-child(3), .one:nth-child(5) {
-    animation-duration: 3s;
+    animation-duration: 5s;
     animation-name: slidein-left;
     animation-iteration-count: 1;
 }
 .one:nth-child(2), .one:nth-child(4) {
-    animation-duration: 3s;
+    animation-duration: 5s;
     animation-name: slidein-right;
     animation-iteration-count: 1;
 }
@@ -48,12 +48,12 @@
     margin-top: 101px;
 }
 .explanation:nth-child(2), .explanation:nth-child(4) {
-    animation-duration: 3s;
+    animation-duration: 5s;
     animation-name: slidein-left;
     animation-iteration-count: 1;
 }
 .explanation:nth-child(1), .explanation:nth-child(3), .explanation:nth-child(5) {
-    animation-duration: 3s;
+    animation-duration: 5s;
     animation-name: slidein-right;
     animation-iteration-count: 1;
 }
@@ -91,7 +91,7 @@
     }
 
     to {
-        margin-left: 0%;
+        margin-left: 30%;
     }
 }
 
@@ -102,6 +102,6 @@
     }
 
     to {
-        margin-right: 0%;
+        margin-right: 30%;
     }
 }
