@@ -1,15 +1,18 @@
 {
   "files": {
-    "main.css": "/hyeok-front/static/css/main.7e5d3dde.css",
-    "main.js": "/hyeok-front/static/js/main.38692764.js",
+    "main.css": "/hyeok-front/static/css/main.0c5b16b0.css",
+    "main.js": "/hyeok-front/static/js/main.b893f981.js",
     "static/js/787.7a0bfedd.chunk.js": "/hyeok-front/static/js/787.7a0bfedd.chunk.js",
+    "static/media/banner_back.gif": "/hyeok-front/static/media/banner_back.55435c2d334be78597d2.gif",
+    "static/media/macarons.jpg": "/hyeok-front/static/media/macarons.58f8e1bd86bdc318198c.jpg",
+    "static/media/banner_font.png": "/hyeok-front/static/media/banner_font.6fb18e79e741c8aa05da.png",
     "index.html": "/hyeok-front/index.html",
-    "main.7e5d3dde.css.map": "/hyeok-front/static/css/main.7e5d3dde.css.map",
-    "main.38692764.js.map": "/hyeok-front/static/js/main.38692764.js.map",
+    "main.0c5b16b0.css.map": "/hyeok-front/static/css/main.0c5b16b0.css.map",
+    "main.b893f981.js.map": "/hyeok-front/static/js/main.b893f981.js.map",
     "787.7a0bfedd.chunk.js.map": "/hyeok-front/static/js/787.7a0bfedd.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.7e5d3dde.css",
-    "static/js/main.38692764.js"
+    "static/css/main.0c5b16b0.css",
+    "static/js/main.b893f981.js"
   ]
 }
