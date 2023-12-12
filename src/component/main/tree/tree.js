@@ -53,6 +53,7 @@ const datas = [
             "컴퓨터 활용능력 1급"
             ,"리눅스 마스터 2급"
             ,"정보처리산업기사"
+            ,"NAVER CLOUD PLATFORM Certified Associate"
         ]
     }
 ]
